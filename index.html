@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>KL ERP</title>
+    <link rel="stylesheet" href="kl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
+    <link rel="icon" href="image.png ">
+    
+</head>
+<body>
+    <div class="container">      
+        <div class="div1">
+
+       <div class="img-container">
+         <img src="klh.png" alt="">
+         
+       </div>
+       
+    </div>
+    <div class="div2">
+        <div class="klh-div">
+    <div class="logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/KLH_Logo.png" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/KLH_Logo.png" alt="">
+    </div>
+   <button> <i class="fa-solid fa-gear " id="settings_btn"></i></button>
+</div>
+
+        <div class="login-div">
+            
+           <p id="login-text"> <strong>Login</strong></p>
+          <label for="text">Enter Username</label><br>
+           <input type="text" id="user" placeholder="" required><br>
+            
+            <p id="blank_username" style="color: red; display: none; font-size: 12px;">Username cannot be blank</p>
+            <label for="password">Enter Password</label>
+           <input type="password" id="password" placeholder="" required>
+           <p id="incorret" style="color: red; display: none; font-size: 12px;">incorrect username or password.</p>
+
+             
+          <div class="rem"> <input type="checkbox" id="check">   
+           <label for="check" >Remember me </label></div>
+          
+           <br> 
+            <img src="/images/error.png" alt="">
+              <input type="text" id="error" placeholder="Enter verification code" required>
+           <div class="reset-div">
+            <button id="forgot_password" class="red_option"><p>Forgot password?</p></button>
+            <button class="red_option"><p>Parent Registration?</p></button>
+            <button class="red_option"><p>MFA Registration?</p>    </button>
+            
+           </div>
+           <center>
+            <button  onclick="login()" id="btn">
+                <a href="">Login</a>
+            </button>
+           </center> 
+        </div>
+       
+    </div>
+      
+    </div>
+
+    <script src="kl.js"></script>
+</body>
+</html> 
